@@ -1,0 +1,442 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notonastaliqurdudraft.css);
+
+@font-face {
+  font-family: 'Noto Nastaliq Urdu Draft';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://www.azhar.eg/Portals/_default/Skins/Marsad/Style/fonts/nastaliq/NotoNastaliqUrdu.eot);
+  src: url(http://www.azhar.eg/Portals/_default/Skins/Marsad/Style/fonts/nastaliq/NotoNastaliqUrdu.eot?#iefix) format('embedded-opentype'),
+       url(http://www.azhar.eg/Portals/_default/Skins/Marsad/Style/fonts/nastaliq/NotoNastaliqUrdu.woff2) format('woff2'),
+       url(http://www.azhar.eg/Portals/_default/Skins/Marsad/Style/fonts/nastaliq/NotoNastaliqUrdu.woff) format('woff'),
+       url(http://www.azhar.eg/Portals/_default/Skins/Marsad/Style/fonts/nastaliq/NotoNastaliqUrdu.ttf) format('truetype');
+}
+
+
+@font-face {
+    font-family: 'universCondensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/UniversLTStd-LightCn2.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/ebGarmond.woff2") format('woff2');
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+
+@font-face {
+    font-family: 'GESSTwoLight-Light';
+    src: url('fonts/GESSTwoLight-Light/GESSTwoLight-Light.eot?#iefix') format('embedded-opentype'), url('fonts/GESSTwoLight-Light/GESSTwoLight-Light.otf') format('opentype'), url('fonts/GESSTwoLight-Light/GESSTwoLight-Light.woff') format('woff'), url('fonts/GESSTwoLight-Light/GESSTwoLight-Light.ttf') format('truetype'), url('fonts/GESSTwoLight-Light/GESSTwoLight-Light.svg#GESSTwoLight-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GESSTwoBold-Bold';
+    src: url('fonts/GESSTwoBold-Bold/GESSTwoBold-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/GESSTwoBold-Bold/GESSTwoBold-Bold.otf') format('opentype'), url('fonts/GESSTwoBold-Bold/GESSTwoBold-Bold.woff') format('woff'), url('fonts/GESSTwoBold-Bold/GESSTwoBold-Bold.ttf') format('truetype'), url('fonts/GESSTwoBold-Bold/GESSTwoBold-Bold.svg#GESSTwoBold-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Droid Arabic Naskh';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/DroidArabicNaskh/DroidNaskh-Regular.eot);
+    src: url(fonts/DroidArabicNaskh/DroidNaskh-Regular.eot?#iefix) format('embedded-opentype'), url(fonts/DroidArabicNaskh/DroidNaskh-Regular.woff2) format('woff2'), url(fonts/DroidArabicNaskh/DroidNaskh-Regular.woff) format('woff'), url(fonts/DroidArabicNaskh/DroidNaskh-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "PT Bold Heading";
+    src: url(fonts/PT-Bold-Heading.ttf) format("truetype");
+    font-weight: 700;
+}
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*background-image: url(../images/main-bg.png);*/
+    font-size: 100%;
+    line-height: 1.25em;
+    font-family: 'Univers LT W01 65 Bold',Verdana,Helvetica,Arial,"Bitstream Vera Sans",sans-serif;
+    font-weight: normal;
+    overflow-x: hidden;
+
+   
+    background-image: url("../images/white-bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+
+
+
+}
+
+.main-wrapper * {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a, a:active, a:focus {
+    text-decoration: none;
+    font-weight: normal;
+    outline: 0;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+.nopadding-hor {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: " ";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.cleaner {
+    clear: both;
+}
+
+.topbar {
+    border-top: 5px solid;
+}
+
+.topmenu {
+    padding: 0px;
+    margin: 0px;
+    float: right;
+    font-family: 'universCondensed';
+    margin-left: 17%;
+}
+
+    .topmenu li {
+        background: transparent;
+        border: none;
+        display: inline-block;
+        margin-right: 0;
+        padding-right: .5em;
+        padding-left: .5em;
+        z-index: 7;
+    }
+
+        .topmenu li a {
+            color: #fff;
+            padding: 0.3em 2px 0.3em 3px;
+            text-decoration: none;
+            cursor: pointer;
+            display: block;
+        }
+
+.lang {
+    float: right;
+}
+
+    .lang a {
+        display: inline-block;
+    }
+
+        .lang a img {
+            width: 79%;
+            margin-top: 5px;
+        }
+
+.logo {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    padding: 7px;
+    padding-bottom: 4px;
+    border-bottom-right-radius: 33px;
+    border-bottom-left-radius: 33px;
+}
+
+.sf-menu {
+    margin-left: 52px;
+}
+
+    .sf-menu > li:first-child {
+        background: #635e52;
+    }
+
+    .sf-menu > li:nth-child(2) {
+        margin-left: 58px;
+    }
+
+    .sf-menu > li:first-child > a:first-child {
+        color: white;
+        font-weight: bold;
+        font-size: 21px;
+        padding-left: 8px;
+        padding-right: 0px;
+            line-height: 0.4;
+    }
+
+    .sf-menu > li:first-child:after {
+        border: 29px solid transparent;
+        content: "";
+        display: block;
+        position: absolute;
+        left: 100%;
+        bottom: 0;
+    }
+
+.header.inner .logo2 {
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'universCondensed';
+}
+
+
+
+.content-main {
+    background: white;
+    padding: 20px;
+    background-image: url(../Images/mosque.jpg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+    .content-main .ribbon2 {
+        width: 105%;
+    }
+
+.main.inner .content-main {
+    padding: 0px;
+}
+
+
+.content-footer {
+    border-top: 8px solid;
+    clear: both;
+    display: block;
+}
+
+    .content-footer .block1 {
+        padding: 35px;
+    }
+
+.news-block {
+    padding: 30px 40px;
+    color: white;
+}
+
+    .news-block h2 {
+        border-bottom: 2px solid red;
+        line-height: 1.4;
+        font-weight: normal;
+    }
+
+.bannerAd a {
+    position: relative;
+    display: block;
+    padding: 5px;
+}
+
+    .bannerAd a:hover .bannerText, .bannerAd a:hover .bannerText img {
+        background: #cd0e06;
+    }
+
+.bannerText {
+    background: #355878;
+    bottom: 0;
+    position: absolute;
+    width: 97%;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: 'universCondensed';
+}
+
+    .bannerText img {
+        margin-top: -25px;
+        margin-bottom: -5px;
+        margin-right: 5px;
+        padding: 3px;
+        border-top-right-radius: 13px;
+        border-top-left-radius: 13px;
+        background: #355878;
+    }
+
+.main {
+    box-shadow: 0 0 0.5em rgba(0,0,0,0.2);
+}
+
+.title {
+    font-family: 'EB Garamond';
+}
+
+.content-slider {
+    background-image: url(../Images/home-news-bg.png);
+    background-position: right bottom;
+}
+
+
+.site-title {
+    position: absolute;
+    bottom: 55px;
+    left: 20px;
+    color: white;
+    line-height: 36px;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 1px 2px 10px black,1px 2px 10px black,0px -1px 11px black;
+}
+
+
+.banner-header {
+    display: inline-block;
+    padding-left: 20px;
+    position: relative;
+    line-height: 44px;
+    font-size: 21px;
+    margin-right: 30px;
+    padding-right: 20px;
+}
+
+    .banner-header:before {
+        border: 22px solid transparent;
+        content: "";
+        display: block;
+        position: absolute;
+        left: 100%;
+        border-right-width: 0px;
+        bottom: 0;
+    }
+
+.Title-Marsad-Main {
+    background:#eee;
+}
+
+/*custom media queries*/
+@media (max-width: 1200px) {
+    ul.sf-menu > li {
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 992px) {
+    ul.sf-menu > li {
+        font-size: .7em;
+    }
+    .sf-menu > li:nth-child(2) {
+            margin-right: 45px;
+    }
+
+    .sf-menu a {
+        padding: 1.6em 0.6em;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .sf-menu a  {
+       
+    }
+}
+
+
+/*DNN News Main Featured Image in Details*/
+.eds_news_AzharNewEasyDNNNews.eds_subCollection_news .EDN_article .EDN_mediaContainer {
+    float:right !important;
+}
+
+
+/*color scheme*/
+
+/*------------color1----------------*/
+.header.inner .logo2, .content-footer, .sf-menu a,.banner-header  {
+    color: white;
+}
+
+/*------------color2----------------*/
+
+.topbar, .logo, .sf-menu > li:first-child > a:first-child, .sf-menu li:hover, .sf-menu li.sfHover, .sf-menu li li:hover, .sf-menu li li.sfHover {
+    background-color: #b59f6c;
+}
+
+.content-footer {
+    border-color: #b59f6c;
+}
+
+.sf-menu > li:first-child:after {
+    border-top-color: #b59f6c;
+    border-left-color: #b59f6c;
+}
+
+/*------------color3---------------*/
+a, a:active, a:focus,.multivew2 .article h2.article_title a{
+    color: #635e52;
+}
+
+.topbar {
+    border-color: #635e52;
+}
+
+.content-footer, .main-menu, .sf-menu ul {
+    background-color: #635e52;
+}
+
+/*------------color4---------grey------*/
+.banner-header {
+    background-color: #929292;
+}
+
+    .banner-header:before {
+        border-left-color: #929292;
+        border-right-color: #929292;
+    }
+
+
+/*------------color5---------red--#cd0e06----*/
+
+/*------------color6-------------------------*/
+.multivew2 .article h2.article_title a {
+   
+}
+
+/*------------------color6-------------------*/
+.multivew2 .article .article_excerpt {
+    color: #444 !important;
+}

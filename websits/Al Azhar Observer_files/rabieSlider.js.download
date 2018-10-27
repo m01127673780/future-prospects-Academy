@@ -1,0 +1,113 @@
+﻿(function ($) {
+
+    $.fn.rabieSlider = function () {
+
+        var count;
+        var currentSlide = 0;
+        var slideImages = {};
+        var slideTitles = {};
+        var slideLinks = {};
+        var slideDate = {};
+        var speed = 7000;
+        var fadeSpeed = 500;
+        var loop;
+
+        var count = this.children(".slides").children("div").children(".item").length;
+
+        //add image sources and titles to array & assign id's
+        this.children(".slides").children("div").children(".item").each(function (i) {
+
+            $(this).attr("id", "slide" + i);
+
+            slideTitles[i] = $(this).children(".article_title").children("a").html();
+
+            slideImages[i] = $(this).children(".atricle_img").children(".article_img_src").attr("src");
+
+            slideLinks[i] = $(this).children(".article_title").children("a").attr("href");
+
+            slideDate[i] = $(this).children(".article_meta").html();
+
+        });
+
+        //add thumbs based on slides count
+        for (x = 0; x < count; x++) {
+            this.children(".thumbnails").append('<div id="thumb' + x + '" class="article thumb col-xs-12 col-sm-3 clearfix"><div class="atricle_img col-sm-12 col-xs-3 nopadding-hor" style="background-image:url(\'' + slideImages[x] + '\');"><img src="http://www.azhar.eg/Portals/_default/Skins/Azhar/images/template.png" /></div><div class="article_meta">' + slideDate[x] + '</div><a href="' + slideLinks[x] + '" class="article_title col-sm-12 col-xs-9 nopadding-hor">' + slideTitles[x] + '</a></div>');
+
+            //add listeners for the thumbs
+
+            //click case
+            $("#thumb" + x).click(function () {
+                var current = $(this).attr("id").charAt(5);
+                current = parseInt(current);
+                currentSlide = current+1;
+                $(".item").hide();
+                $(".thumb").removeClass("currentThumb");
+                $("#thumb" + (current)).addClass("currentThumb");
+                $("#slide" + (current)).fadeIn(fadeSpeed);
+                clearInterval(loop);
+                loop = setInterval(next, speed);
+            });
+
+        }   
+
+        next();
+        start();
+
+        $(".article.featured").mouseenter(function () {
+            stop();
+        });
+
+        $(".article.featured").mouseleave(function () {
+            start();
+        });
+
+        function start() {
+            loop = setInterval(next, speed);
+        }
+
+        function stop() {
+            clearInterval(loop);
+        }
+
+        function right() {
+            stop();
+            next();
+            start();
+            return false
+        }
+
+        function left() {
+            stop();
+            prev();
+            start();
+            return false;
+        }
+
+        function prev() {
+            currentSlide--;
+            if (currentSlide < 1) {
+                currentSlide = count;
+            }
+
+            $(".item").hide();
+            $(".thumb").removeClass("currentThumb");
+            $("#slide" + (currentSlide - 1)).fadeIn(fadeSpeed);
+            $("#thumb" + (currentSlide - 1)).addClass("currentThumb");
+            
+        }
+
+        function next() {
+            currentSlide++;
+            if (currentSlide > count) {
+                currentSlide = 1;
+            }
+
+            $(".item").hide();
+            $(".thumb").removeClass("currentThumb");
+            $("#slide" + (currentSlide - 1)).fadeIn(fadeSpeed);
+            $("#thumb" + (currentSlide - 1)).addClass("currentThumb");
+        }
+
+    };
+
+}(jQuery));

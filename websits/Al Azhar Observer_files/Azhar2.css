@@ -1,0 +1,392 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+@import url(http://www.azhar.eg/DesktopModules/EasyDNNnews/Templates/_default/Azhar2/img/azhar-logo/azhar_font_icon.css);
+
+.user_dashboard a {
+    display: inline-block;
+    background-color: #333;
+    padding: 0px 5px;
+    margin: 5px;
+    color: white;
+}
+
+/*list article slider*/
+
+.azhar2-slider li {
+    position: relative;
+}
+
+.azhar2-slider .admin_actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+    .azhar2-slider .admin_actions a {
+        color: white;
+    }
+
+.azhar2-slider .atricle_img {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 70%;
+    float: right;
+}
+
+.azhar2-slider .article_title {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    left: 0;
+    padding: 15px;
+    direction: rtl;
+    width: 40%;
+    padding-right: 10%;
+    padding-left: 10px !important;
+    text-shadow: 0px 2px 9px black;
+    line-height: 1.5;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5a2d1b+0,5a2d1b+79,000000+100&1+0,1+79,0+100 */
+    background: -moz-linear-gradient(left, rgba(90,45,27,1) 0%, rgba(90,45,27,1) 79%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(90,45,27,1) 0%,rgba(90,45,27,1) 79%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(90,45,27,1) 0%,rgba(90,45,27,1) 79%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a2d1b', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+.azhar2-slider .article_pager {
+    display: none;
+}
+
+.azhar2-slider .article_title a {
+    color: white;
+}
+
+.azhar2-slider .article_meta {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    direction: rtl;
+    display: block;
+    background: rgba(255,255,255,0.5);
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*list article slider theme3*/
+
+
+.azhar3-slider li {
+    position: relative;
+}
+
+.azhar3-slider .admin_actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+        z-index: 999 !important;
+}
+
+    .azhar3-slider .admin_actions a {
+        color: white;
+    }
+
+.azhar3-slider .atricle_img {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 72%;
+    float: right;
+}
+
+.azhar3-slider .article_title {
+position: absolute;
+bottom: 0px;
+right: 0;
+padding: 8px;
+direction: rtl;
+width: 72%;
+text-shadow: 0px 2px 9px black;
+line-height: 1.5;
+background-color: rgba(0,0,0,0.6);
+padding-left: 8px !important;
+}
+
+.azhar3-slider .article_pager {
+    display: none;
+}
+
+.azhar3-slider .article_title a {
+    color: white;
+}
+
+.azhar3-slider .article_meta {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    direction: rtl;
+    display: block;
+    background: rgba(255,255,255,0.5);
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.azhar3-slider .bx-custom-pager {
+top: 0;
+left: 0;
+padding: 0;
+width: 28% !important;
+background: rgba(0,0,0,0.6);
+padding-top: 10px !important;
+height:100%
+}
+
+.azhar3-slider .thumbnail {
+    background-size: cover;
+    border: 2px solid white;
+    width: 68%;
+margin: 5px auto;
+position:relative;
+}
+
+    .azhar3-slider .thumbnail:hover {
+        border: 2px solid #5a2d1b;
+    }
+
+
+
+.azhar3-slider .thumbnail .article-title-thumb{
+        position: absolute;
+    top: 0px;
+    right: 100%;
+    width: 170px;
+    text-align: right;
+    background: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 5px;
+    box-shadow: -3px 2px 5px;
+    z-index: 99;
+    display:none;
+    border: 2px solid #5a2d1b;
+        
+}
+
+    .azhar3-slider .thumbnail:hover .article-title-thumb{
+        display:block;
+    }
+
+.bx-pager-link.active .thumbnail {
+    border: 2px solid black;
+}
+
+.bx-pager-item a {
+    display:block;
+}
+
+/*--------------------list_article_default--------------------------*/
+.multivew2 {
+    direction: rtl;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+    .multivew2 .article {
+        display: block;
+        margin: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        transition: all 0.5s;
+        border-bottom: 1px solid lightgrey;
+        border-top: 2px solid transparent;
+        border-right: 1px solid transparent;
+        border-left: 1px solid transparent;
+        position: relative;
+    }
+
+
+    .multivew2 .slides .article {
+        display: none;
+    }
+
+    .multivew2 .article.featured {
+        border-bottom: 1px solid lightgrey;
+    }
+
+
+
+    .multivew2 .article .admin_actions {
+        position: absolute;
+        z-index: 1;
+        background-color: #333;
+        color: white;
+        padding: 0px 5px;
+        top: 0px;
+    }
+
+        .multivew2 .article .admin_actions a {
+            color: white;
+        }
+
+
+    .multivew2 .article:hover, .multivew2 .thumb.currentThumb {
+        background: white;
+        border-top: 2px solid transparent;
+        border-right: 1px solid lightgrey;
+        border-left: 1px solid lightgrey;
+    }
+
+    .multivew2 .article:hover {
+        border-top-color: lightgrey;
+    }
+
+    .multivew2 .thumb.currentThumb {
+        border-top-color: red;
+    }
+
+    .multivew2 .article:hover .article_meta {
+        background: #333;
+        color: white;
+    }
+
+
+    .multivew2 .article .admin_actions {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        z-index: 1;
+        background: #333;
+        padding: 0px 5px;
+        color: white;
+    }
+
+    .multivew2 .article h2.article_title {
+        font-size: 24px;
+        margin: 0px;
+        word-spacing: 0px;
+        line-height: 1.3;
+        font-family: "PT Bold Heading";
+    }
+
+        .multivew2 .article h2.article_title a {
+            color: red;
+        }
+
+    .multivew2 .article h3.article_title {
+        font-size: 12px;
+        line-height: 1.5;
+        margin: 5px 0px;
+        padding: 0px 5px;
+        border-bottom: 2px solid;
+    }
+
+    .multivew2 .thumbnails .article_title {
+        height: 80px;
+        overflow: hidden;
+        font-size: 12px;
+        line-height: 1.6;
+        word-spacing: 0px;
+        font-weight: bold;
+    }
+
+    .multivew2 .article .article_excerpt {
+        line-height: 1.5;
+        font-size: 14px;
+        color: #000;
+        margin-top: 6px;
+        font-family: 'Droid Arabic Naskh', serif;
+        font-weight: bold;
+    }
+
+    .multivew2 .article.featured .article_meta {
+        right: 15px;
+        top: 18px;
+        font-size: 18px;
+    }
+
+
+    .multivew2 .article .article_meta {
+        display: inline-block;
+        background: rgba(90,90,90,0.7);
+        padding: 0 5px;
+        color: white;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        font-size: 10px;
+    }
+
+    .multivew2 .article .atricle_img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: black;
+    }
+
+        .multivew2 .article .atricle_img img {
+            width: 100%;
+        }
+
+
+/*---------------------------------------list aricle box--------------------------------*/
+
+.list_article_box .article_title {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.article_pager {
+    clear: both;
+}
+
+.main-container .timerow.title {
+    letter-spacing: -1px;
+}
+
+.article_pager:after, .article_pager:before {
+    content: "";
+    display: table;
+}
+
+.article_pager:after {
+    clear: both;
+}
+
+.article_pager a {
+    float: right;
+    display: block;
+    padding: 5px;
+}
+
+    .article_pager a.active {
+        background: #e3e3e3;
+    }
+
+@media (max-width: 1200px) {
+    .multivew2 .thumbnails .article_title {
+        height: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .multivew2 .thumbnails .article_title {
+        height: 75px;
+    }
+}
+
+@media (max-width: 768px) {
+    .multivew2 .thumbnails .article_title {
+        height: auto;
+    }
+
+    .nopadding-right, .nopadding-left {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+}

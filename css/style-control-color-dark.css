@@ -1,0 +1,399 @@
+ body{
+	background: #222;
+	 color: #eee;
+}
+.bac-1{
+	background: #222;
+}
+.bac-2{
+	background: #444;
+}
+.wrapper p {
+     
+     color: #999;
+    font-weight: bold;
+	    letter-spacing: .75;
+}
+p {
+     color: #cecccc;
+     
+ }
+.app-review,.price-table .price-box ul li {
+	background: #444444;
+}
+/*---------------------*/
+.pic-inf 
+.sticky .navbar{ 
+    background: #0C274C;
+}
+.welcome {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/%D9%88%D8%B6%D8%AD%D9%87-%D8%B3%D9%84%D8%A7%D9%84%D9%84%D9%85.PNG);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+ 
+.welcome .after-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/background/Pattern-1.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: 21;
+} 
+.welcome .after-img.border-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;		
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/background/wave.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: 21;
+}
+/*
+#one-sec{
+	background: #fff;
+}
+*/
+
+
+ 
+.div-text-clop{
+	line-height: 2;
+}
+
+.video-background{
+  position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -100;
+}
+/************************************************************************/
+ .pricing-table .section-desc{
+     color:#000; 
+}
+
+/************************* start price-table */
+.price-table{
+    color:#000;
+ }
+ 
+.content-table{
+	border:none;
+  }
+.price-table h1:hover {
+    -webkit-text-shadow: 10px 6px 10px #f00;
+    -o-text-shadow: 10px 6px 10px #f00;
+    -ms-text-shadow: 10px 6px 10px #f00;
+    -moz-text-shadow: 10px 6px 10px #f00;
+      text-shadow: 10px 6px 10px #f00;
+}
+ .price-box{
+     color: red;
+      box-shadow:  0 10px 37px -11px #888;
+}
+.price-table .price-box p {
+     color: #eee;
+    background-color: #ff2462;
+    	color: #eee;
+}
+.price-box{
+	color: #ff2462;
+}
+.price-table .price-box:hover p {
+ -webkit-transform:scale(1.1,1.1) rotate(350deg);
+ -moz-transform:scale(1.1,1.1) rotate(360deg);
+ -o-transform:scale(1.1,1.1) rotate(360deg);
+ -ms-transform:scale(1.1,1.1) rotate(360deg);
+  transform:scale(1.1,1.1) rotate(360deg);
+    border: 2px solid #555;
+}
+.price-table .price-box ul li:hover{
+        border-left: 15px solid #ff2462;
+       border-right: 15px solid #ff2462;
+}
+.pricing-table button{
+ color: #fff;
+ background-color:  #ff2462;
+}
+.pricing-table button:hover{
+    background-color:#121212 ;
+         color:#e3ce90;
+
+}
+.carousel-caption {
+ 
+    color: #fff;
+ }
+  btn-OVERVIEW.btn btn-danger.latest-posts{
+    background-color:#121212 ;
+
+}
+.app-review .owl-theme .owl-nav [class*=owl-] {
+    background:  #ff2462;
+    color: #fff;
+    border-color: #ff2462;
+}
+.app-review .owl-theme .owl-nav [class*=owl-]:hover {
+    background: #0C274C;
+    color: #fff;
+    border-color: #0C274C;
+}
+.ul-icon-det {
+	
+}
+
+.our-tteam-inf{
+ background-color:#000;
+	overflow: hidden;
+	color:#fff;
+}
+
+/*<!--=============start  section tteam (6)========================= -->*/
+.testimon-ials-slider{
+    background:#333;
+    color: red;	 
+} 
+.next-pre-ico {
+     background: #9f1616;
+    color: #fff;
+}
+   .ol-c-test-mon.owl-carousel  .owl-dots{
+     -webkit-tap-highlight-color: #000;
+  }
+ 
+ 
+
+
+ 
+
+ /*  =======================start  section team(8)======================*/
+.sect-my-teme {
+background:  #ff2462;
+}
+ 
+ .ul-icon-det{
+    background:  #ff2462;
+}
+	.sp-ovr-l{
+     color: #f00;
+}
+.sp-ovr-l{
+ 	position: absolute;
+    background: rgba(0,0,0,0.7);
+}
+ 
+.sp-ovr-l h4{
+     color: #fff;
+}
+		
+.back-g{
+	background: green;
+ }
+	.d-hover:hover .back-g{
+ 		background: #0C274C;
+}
+ 
+/*  =======================End section team(8)======================*/*/
+ 
+ /*start componnt section  .portfoli shuflsccript*/
+
+.portfoli .images > div {
+
+margin-bottom: 20px;
+height: 248px;
+}
+
+
+.buttons button{
+	    width: 109px;
+    padding: 10px;
+    background: #0C274C;
+    color: #fff;
+   
+
+}
+.portfoli .more{
+
+	color:#fff;
+    background: #0C274C;
+  
+ 
+	}
+
+.active-btn{
+background:  #ff2462!important;
+
+}
+ /*-------overley-------*/
+
+.col-over{
+     background-color: transparent;
+ }
+ .col-over .overley i{
+ 
+    color: #eee;
+     
+}
+.buttons button {
+    color: #333;
+    background: #0C274C;
+    color: #fff;
+}
+/*-------End overley-------*/
+/*End section shufle script--------------------*/
+	
+	
+   
+
+/*---------butoon-------------------*/
+
+ .butoon-1-a{ 
+    background-color: #ff2462;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+/*    border: 1px solid #ff2462;*/
+    color: #fff;
+}
+.butoon-1-a:hover span:first-child {
+	background:#ff2462;
+
+ 
+}
+.from-left span:first-child{
+		 border-radius: 10px;
+		background: #e74c3c;
+}
+ 
+.butoon-1-a a{
+    color: #fff;
+    
+}
+ .section-all-fotar, .footer-img footer{
+
+	 background: url(../img/background/contact.jpg) no-repeat;
+      background-size: contain;
+ }
+/*===========End section footer===========================*/
+
+ .none-background.butoon-1-a{
+	background-color: transparent!important;
+}
+footer a>i,footer a>.fa-angle-double-up {
+    background: #ff2462;
+    border: 1px dashed #2f3f54;
+}
+footer a>i:hover{
+background: #0C274C;
+	border:1px dashed  #ff2462;
+	
+}
+footer ,
+.sticky .navbar{
+	background: #000;
+}
+
+
+  
+
+.app-screenshot .thm-container .owl-theme .owl-dots .owl-dot  span
+,.butoon-1-a{
+	background:  #ff2462;
+}
+	.butoon-1-a{
+	background:  #ff2462;
+    border-radius: 33px;
+ }
+.app-screenshot .thm-container .owl-theme .owl-dots .owl-dot.active span{
+	
+
+}
+.butoon-1-a:hover span:first-child {
+		background: #0C274C;
+   	border-radius: 15px;
+
+}
+.section-all-fotar .main-title-h1 h1{
+	border-bottom: 3px solid  #ff2462
+}
+
+.portfolio.prti-mar{
+	
+ 	color: #fff;
+	background:  #ff2462
+}
+
+
+
+/*start  .choose---------------*/
+.choose .c-panel ul {
+	background: #0c274c;
+	
+}
+.choose .c-panel ul {
+	background: #0c274c!important;
+}
+/*start statstk---------------*/
+.contant:hover.contant i{
+		background:  #ff2462
+
+} 
+.stats:hover.stats .icon-sta, .c-col-services:hover.icon-tools .hov, .c-col-services:hover.c-col-services i, .statistics .stats:hover i {
+    color: #fff;
+		background:  #ff2462
+}
+/*start  .choose---------------*/
+ .pic-inf 
+{ 
+    background:#0C274C;
+}
+.pic-inf 
+{
+     
+    background:#0C274C;
+}
+ .quick-help .owl-carousel .owl-item img{
+	height: 300px;
+}
+.box-rad{
+	background:#000;
+}
+/*---------- start contact-us -----------------*/
+.pag-mab-contact-us{
+	background: #444 url(../../img/bg-map.png);
+}
+.app-screenshot{
+	background: #444;
+}
+.socil-mide-to{
+	background: #000;
+	color: #cabebe;
+}
+/*---------- start contact-us -----------------*/
+/*---------- start .bacg-sect-stap -----------------*/
+/*
+.bacg-sect-stap{
+ 
+	background:url(../img/background/contact.jpg) no-repeat center center   ;
+}
+*/
+
+/*---------- start .bacg-sect-stap -----------------*/
